@@ -1,0 +1,21 @@
+<div class="PagePromoModuleStart" data-module data-width="full" style="background-image: url({{backgroundImage}});">
+  <div class="PagePromoModuleStart-content-wrapper">
+    <div class="PagePromoModuleStart-columns">
+      <div class="PagePromoModuleStart-content">
+        {{#with title}}
+          <div class="PagePromoModuleStart-title">{{this}}</div>
+        {{/with}}
+
+        {{#with description}}
+          <div class="PagePromoModuleStart-description">{{this}}</div>
+        {{/with}}
+      </div>
+
+      {{#with items}}
+        <div class="PagePromoModuleStart-items">
+          {{this}}
+        </div>
+      {{/with}}
+    </div>
+  </div>
+</div>

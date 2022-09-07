@@ -11,7 +11,8 @@ module.exports = {
       './styleguide/newsletter/NewsletterInline.js',
     'newsletter/NewsletterEmbed.js':
       './styleguide/newsletter/NewsletterEmbed.js',
-    'styles/amp/Amp.js': './styleguide/styles/amp/Amp.js'
+    'styles/amp/Amp.js': './styleguide/styles/amp/Amp.js',
+    'V1/styles/All.min.js': './styleguide/V1/styles/All.js'
   },
 
   output: {
@@ -40,6 +41,15 @@ module.exports = {
             './styleguide/styles/style-2/assets'
           ),
           to: './styleguide/styles/style-2/assets/',
+          info: { minimized: true }
+        },
+        {
+          from: '**/*',
+          context: path.resolve(
+            __dirname,
+            './styleguide/V1/styles/assets'
+          ),
+          to: './styleguide/V1/styles/assets/',
           info: { minimized: true }
         },
         {

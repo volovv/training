@@ -1,0 +1,17 @@
+{{#if showContainerAccent}}
+    <div class="TwoColumnContainerFull-accent">
+        {{#with accent}}
+            <div class="TwoColumnContainerFull-accent-content">
+                {{#with title}}<div class="TwoColumnContainerFull-accent-title">{{this}}</div>{{/with}}
+                {{#with description}}<div class="TwoColumnContainerFull-accent-description">{{this}}</div>{{/with}}
+            </div>
+            {{#if link}}
+                {{#with link}}
+                    <div class="TwoColumnContainerFull-accent-link">
+                        <a href="{{url}}"{{#with target}} target="{{this}}"{{/with}}>{{text}}</a>
+                    </div>
+                {{/with}}
+            {{/if}}
+        {{/with}}
+    </div>
+{{/if}}

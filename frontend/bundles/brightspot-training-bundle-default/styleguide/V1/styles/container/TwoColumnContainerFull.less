@@ -1,0 +1,143 @@
+.TwoColumnContainerFull {
+  position: relative;
+  padding: 0;
+
+  [data-modulewell] > &[data-module] {
+    padding: 0;
+  }
+
+  &-accent {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 2;
+    margin: auto;
+    border-radius: 50%;
+    padding: 50px 30px;
+    width: 277px;
+    height: 277px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    color: var(--color-primary-text-inverse);
+    background: var(--color-primary);
+    
+    &-title {
+      margin-bottom: 0.5em;
+      font-size: 28px;
+      letter-spacing: 0.5px;
+    }
+    
+    &-description {
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    &-link {
+      color: var(--color-primary-text-inverse);
+
+      a {
+        color: inherit;
+
+        &:hover {
+          color: inherit;
+        }
+      }
+    }
+  }
+
+  &-columns {
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+
+    @media only screen and (min-width: 1024px) {
+      grid-template-rows: auto;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &-content {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin: auto;
+      padding: 20px;
+      width: 320px;
+      max-width: 100%;
+      text-align: center;
+      transform: translate(-50%, -50%);
+    }
+
+    @media only screen and (max-width: 1023px) {
+      &:first-child &-content {
+        padding-bottom: 120px;
+      }
+  
+      &:last-child &-content {
+        padding-top: 120px;
+      }
+    }
+
+    &-logo {
+      display: none;
+      max-width: 100%;
+      height: auto;
+
+      @media only screen and (min-width: 1024px) {
+        display: block;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    &-logo + &-title {
+      position: relative;
+
+      @media only screen and (min-width: 1024px) {
+        margin-top: 15px;
+        padding-top: 25px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          margin: auto;
+          width: 93px;
+          height: 1px;
+          background: var(--color-primary-text-inverse);
+        }
+      }
+    }
+
+    &-title { 
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--color-primary-text-inverse);
+
+      @media only screen and (max-width: 1023px) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &-bg {
+    padding-top: 100%;
+    width: 100%;
+    background-color: var(--color-primary);
+    background-position: center;
+    background-size: cover;
+  }
+}

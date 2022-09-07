@@ -1,0 +1,41 @@
+<div class="TwoColumnContainerFull" data-module>
+    {{#with title}}<div class="TwoColumnContainerFull-title">{{title}}</div>{{/with}}
+    {{include "includes/TwoColumnContainerFull-accent.hbs" this}}
+
+    <div class="TwoColumnContainerFull-columns">
+        {{#with columnOne}}
+            <div class="TwoColumnContainerFull-column">
+                {{#with background}}
+                    <div class="TwoColumnContainerFull-bg" style="background-image: url({{image}})" data-modulewell></div>
+                {{/with}}
+                {{#with content}}
+                    <div class="TwoColumnContainerFull-column-content">
+                        <div class="TwoColumnContainerFull-column-logo">
+                            {{logo}}
+                        </div>
+                        <div class="TwoColumnContainerFull-column-title">
+                            {{title}}
+                        </div>
+                    </div>
+                {{/with}}
+            </div>
+        {{/with}}
+        {{#with columnTwo}}
+            <div class="TwoColumnContainerFull-column">
+                {{#with background}}
+                    <div class="TwoColumnContainerFull-bg" style="background-image: url({{image}})" data-modulewell></div>
+                {{/with}}
+                {{#with content}}
+                    <div class="TwoColumnContainerFull-column-content">
+                        <div class="TwoColumnContainerFull-column-logo">
+                            {{logo}}
+                        </div>
+                        <div class="TwoColumnContainerFull-column-title">
+                            {{title}}
+                        </div>
+                    </div>
+                {{/with}}
+            </div>
+        {{/with}}
+    </div>
+</div>

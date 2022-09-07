@@ -1,0 +1,25 @@
+{
+  "_template": "/V1/container/TwoColumnContainerFull5050.hbs",
+  "showContainerAccent": true,
+  "title": "{{words([2,5])}}",
+  "accent": {
+    "title": "Diversity Grock",
+    "description": "{{words([3,6])}}",
+    "link": {
+      "url": "#",
+      "text": "Read more"
+    }
+  },
+  "columnOne": {
+    "_template": "/text/RichTextModule.hbs",
+    "items": [
+      "{{html('<div class=\"column-example\">Column One</div>')}}"
+    ]
+  },
+  "columnTwo": {
+    "_template": "/text/RichTextModule.hbs",
+    "items": [
+      "{{html('<div class=\"column-example\">Column Two</div>')}}"
+    ]
+  }
+}

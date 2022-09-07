@@ -1,0 +1,107 @@
+.PagePromoModuleStart {
+  position: relative;
+  background-position: center;
+  background-color: var(--color-primary);
+  background-size: cover;
+
+  @media only screen and (min-width: 768px) {
+    padding-top: 50%;
+  }
+
+  :root[data-header-hat="true"] & {
+    margin-top: calc(0px - var(--headerHeight) - var(--hatHeight));
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    background: linear-gradient(90deg, #0B074E 0%, rgba(11, 7, 78, 0) 100%);
+  }
+
+  &-content-wrapper {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 0 @containerPadding;
+    padding-top: calc(var(--headerHeight) + var(--hatHeight));
+    width: @containerWidth;
+    max-width: 100%;
+    color: var(--color-primary-text-inverse);
+
+    @media only screen and (min-width: 768px) {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+  }
+
+  &-title {
+    margin-bottom: 0.5em;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1;
+
+    &-accent {
+      color: #8A65DC;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      font-size: 72px;
+    }
+  }
+
+  &-description {
+    font-size: 20px;
+  }
+
+  &-columns {
+    width: 100%;
+
+    @media only screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      height: 250px;
+    }
+  }
+
+  &-content {
+    @media only screen and (min-width: 768px) {
+      width: 70%;
+    }
+  }
+
+  &-description {
+    max-width: 550px;
+  }
+
+  &-items {
+    padding-top: 30px;
+
+    @media only screen and (min-width: 768px) {
+      width: 30%;
+    }
+
+    .PagePromoA {
+      margin: 0 auto 20px;
+      padding: 10px 20px;
+      width: 353px;
+      max-width: 100%;
+      color: var(--color-primary);
+      background: var(--color-primary-text-inverse);
+    }
+  }
+}

@@ -1,0 +1,428 @@
+{
+  "_include": "/page/Page.json",
+  "stylePackage": [{
+    "_include": "StylePackage.json"
+  }],
+  "_template": "/V1/PageV1.hbs",
+  "hat": {
+    "_template": "/navigation/SectionNavigation.hbs",
+    "items": [
+      {
+        "_template": "/navigation/SectionNavigationItem.hbs",
+        "href": "#",
+        "text": "Events"
+      },
+      {
+        "_template": "/navigation/SectionNavigationItem.hbs",
+        "href": "#",
+        "text": "Community"
+      },
+      {
+        "_template": "/navigation/SectionNavigationItem.hbs",
+        "href": "#",
+        "text": "NewsLetter"
+      },
+      {
+        "_template": "/navigation/SectionNavigationItem.hbs",
+        "href": "#",
+        "text": "{{html('<strong>Giving</strong>')}}"
+      }
+    ]
+  },
+  "logo": {
+    "_include": "/page/PageLogo.json",
+    "image": {
+      "src": "/styleguide/V1/styles/assets/logo.png",
+      "_image": true
+    }
+  },
+  "navigation": {
+    "_template": "/navigation/Navigation.hbs",
+    "items": [
+      {
+        "_include": "/navigation/NavigationItem.json",
+        "items": null,
+        "text": "Federation"
+      },
+      {
+        "_include": "/navigation/NavigationItem.json",
+        "items": null,
+        "text": "News Analysis"
+      },
+      {
+        "_include": "/navigation/NavigationItem.json",
+        "items": null,
+        "text": "Students"
+      },
+      {
+        "_include": "/navigation/NavigationItem.json",
+        "items": null,
+        "text": "Careers"
+      },
+      {
+        "_include": "/navigation/NavigationItem.json",
+        "items": null,
+        "text": "Diversity"
+      },
+      {
+        "_include": "/navigation/NavigationItem.json",
+        "items": null,
+        "text": "Library"
+      },
+      {
+        "_include": "/navigation/NavigationItem.json",
+        "items": null,
+        "text": "About"
+      },
+      {
+        "_template": "/page/Page-searchOverlay.hbs",
+        "items": null,
+        "text": "About"
+      }
+    ]
+  },
+  "searchAction": null,
+  "authentication": {
+    "_template": "/navigation/AuthenticationNavigation.hbs",
+    "items": [
+      {
+        "_template": "/navigation/NavigationItem.hbs",
+        "href": "#",
+        "text": "Log in"
+      }
+    ]
+  },
+  "pageLead": {
+    "_include": "/page/promo/PagePromoModuleB.json",
+    "_template": "/V1/promo/PagePromoModuleStart.hbs",
+    "backgroundImage": "/styleguide/V1/styles/assets/start-bg.jpg",
+    "title": "{{html('2023 Jobs Outlook <div class=\"PagePromoModuleStart-title-accent\">Postdocs</div>')}}",
+    "description": "lorem ipsom dolsot At vero eos et lorem ipsom dolsot At vero eos etlorem ipsom dolsot At vero eos et",
+    "items": [
+      {
+        "_template": "/page/promo/PagePromo.hbs",
+        "backgroundColor": "#ffffff",
+        "url": "",
+        "category": "APS",
+        "categoryUrl": "#",
+        "type": "Panel Discussion",
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "_template": "/page/promo/PagePromo.hbs",
+        "backgroundColor": "#ffffff",
+        "url": "",
+        "category": "SPS",
+        "categoryUrl": "#",
+        "type": "Article",
+        "title": "Lorem ipsum dolor sit amet, consec tetur adip iscing elit sed lorem ipsum ",
+        "description": "October 6 - 8, Washington D.C."
+      },
+      {
+        "_template": "/page/promo/PagePromo.hbs",
+        "backgroundColor": "#ffffff",
+        "url": "",
+        "category": "Community",
+        "categoryUrl": "#",
+        "type": "Discussion",
+        "title": "Lorem ipsum dolor sit amet, consec tetur adip iscing elit sed"
+      }
+    ]
+  },
+  "main": [
+    {
+      "_include": "/V1/section/Page-section.json",
+      "backgroundColor": "#ffffff",
+      "content": {
+        "_include": "/page/promo/PagePromoModuleC.json",
+        "backgroundColor": "#ffffff",
+        "media": null,
+        "publishDate": null,
+        "authorName": null,
+        "url": null,
+        "category": "What We Do",
+        "title": "Lorem Ipsom Dolsot Amir",
+        "description": "lorem ipsom dolsot member societies: At vero eos et accusamus et iusto odio dignissimos. lorem ipsom dolsot member societies: At vero eos et accusamus et iusto odio dignissimoslorem."
+      
+      }
+    },
+    {
+      "_include": "/V1/section/Page-section.json",
+      "content": {
+        "_include": "/page/list/PageListD.json",
+        "title": "Lorem Ipsom Dolsot",
+        "pagination": null,
+        "url": "",
+        "items": [
+          {
+            "_template": "/V1/promo/PagePromoC-V1.hbs",
+            "media": {
+              "_include": "/image/Image.json",
+              "image": {
+                "src": "/styleguide/V1/styles/assets/news/news-1.jpg",
+                "_image": true
+              }
+            },
+            "publishDate": "{{date('short')}}",
+            "url": "",
+            "category": "APS + SPS",
+            "categoryUrl": "#",
+            "type": "Panel Discussion",
+            "title": "The future of Open Science",
+            "description": "Experts have a frank discussion about where we are and where we are going."
+          },
+          {
+            "_template": "/V1/promo/PagePromoC-V1.hbs",
+            "className": "pagePromoC-gradient",
+            "media": {
+              "_include": "/image/Image.json",
+              "image": {
+                "src": "/styleguide/V1/styles/assets/news/news-2.jpg",
+                "_image": true
+              }
+            },
+            "publishDate": "{{date('short')}}",
+            "url": "",
+            "category": "PHYSICS TODAY",
+            "categoryUrl": "#",
+            "type": "Panel Discussion",
+            "title": "W-boson mass hints at physics beyond the standard model",
+            "description": "Experts have a frank discussion about where we are and where we are going."
+          },
+          {
+            "_template": "/V1/promo/PagePromoC-V1.hbs",
+            "media": {
+              "_include": "/image/Image.json",
+              "image": {
+                "src": "/styleguide/V1/styles/assets/news/news-3.jpg",
+                "_image": true
+              }
+            },
+            "className": "PagePromoC--gradient",
+            "publishDate": "{{date('short')}}",
+            "url": "",
+            "category": "Community",
+            "categoryUrl": "#",
+            "type": "Discussion",
+            "title": "Industries That are Magnets for Physics PHDs and Post Docs",
+            "description": "Experts have a frank discussion about where we are and where we are going."
+          }
+        ]
+      }
+    },
+    {
+      "_include": "/V1/section/Page-section.json",
+      "backgroundColor": "#ffffff",
+      "content": {
+        "_template": "/container/TwoColumnContainer.hbs",
+        "_styledTemplate": "/container/TwoColumnContainer5050.hbs",
+        "title": "News and Analysis",
+        "showContainerTitle": true,
+        "columnOne": {
+          "_include": "/page/promo/PagePromoModuleA-mediaTop.json",
+          "media": {
+            "_include": "/image/Image.json",
+            "image": {
+              "src": "/styleguide/V1/styles/assets/news/news-big.jpg",
+              "_image": true
+            }
+          },
+          "publishDate": "{{date('short')}}",
+          "url": "#",
+          "target": "_self",
+          "category": "SRC",
+          "categoryUrl": "#",
+          "type": "Ipsum",
+          "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+        },
+        "columnTwo": {
+          "_include": "/page/list/PageListL.json",
+          "ctaUrl": "",
+          "title": "",
+          "description": "",
+          "items": [
+            {
+              "_template": "/page/promo/PagePromoA.hbs",
+              "url": "",
+              "category": "FYI",
+              "categoryUrl": "#",
+              "type": "Ipsum",
+              "title": "Bacon ipsum dolor amet rump pancetta jowl shoulder bacon tail fatback ground round sirloin",
+              "description": "Ham bresaola strip steak, jowl shoulder bacon tail fatback jerky ribeye chuck cupim. Corned beef shank ground round sirloin. Fatback jerky ribeye chuck jowl shoulder bacon"
+            },
+            {
+              "_template": "/page/promo/PagePromoA.hbs",
+              "url": "",
+              "category": "PHYSICS TODAY",
+              "categoryUrl": "#",
+              "type": "Ipsum",
+              "title": "Bacon ipsum dolor amet rump pancetta jowl shoulder bacon tail fatback ground round sirloin",
+              "description": "Ham bresaola strip steak, jowl shoulder bacon tail fatback jerky ribeye chuck cupim. Corned beef shank ground round sirloin. Fatback jerky ribeye chuck jowl shoulder bacon"
+            },
+            {
+              "_template": "/page/promo/PagePromoA.hbs",
+              "url": "",
+              "category": "OPTIMA",
+              "categoryUrl": "#",
+              "type": "Ipsum",
+              "title": "Bacon ipsum dolor amet rump pancetta jowl shoulder bacon tail fatback ground round sirloin",
+              "description": "Ham bresaola strip steak, jowl shoulder bacon tail fatback jerky ribeye chuck cupim. Corned beef shank ground round sirloin. Fatback jerky ribeye chuck jowl shoulder bacon"
+            },
+            {
+              "_template": "/page/promo/PagePromoA.hbs",
+              "url": "",
+              "category": "PHYSICS TODAY",
+              "categoryUrl": "#",
+              "type": "Ipsum",
+              "title": "Bacon ipsum dolor amet rump pancetta jowl shoulder bacon tail fatback ground round sirloin",
+              "description": "Ham bresaola strip steak, jowl shoulder bacon tail fatback jerky ribeye chuck cupim. Corned beef shank ground round sirloin. Fatback jerky ribeye chuck jowl shoulder bacon"
+            }
+          ]
+        }
+      }      
+    },
+    {
+      "_template": "/V1/container/TwoColumnContainerFull5050.hbs",
+      "showContainerAccent": true,
+      "title": "BROUGHT TO YOU BY",
+      "accent": {
+        "title": "Diversity Grock",
+        "description": "THU 6.24.22 - 10AM",
+        "link": {
+          "url": "#",
+          "text": "Register"
+        }
+      },
+      "columnOne": {
+        "background": {
+          "image": "/styleguide/V1/styles/assets/companies/AAA.jpg"
+        },
+        "content": {
+          "title": "American Association of Astronomers",
+          "logo": {
+            "_include": "/image/Image.json",
+            "image": {
+              "src": "/styleguide/V1/styles/assets/companies/AAA-logo.png",
+              "_image": true
+            }
+          }
+        }
+      },
+      "columnTwo": {
+        "background": {
+          "image": "/styleguide/V1/styles/assets/companies/OPTICA.jpg"
+        },
+        "content": {
+          "title": "Optica",
+          "logo": {
+            "_include": "/image/Image.json",
+            "image": {
+              "src": "/styleguide/V1/styles/assets/companies/OPTICA-logo.png",
+              "_image": true,
+              "_resize": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "_include": "/V1/section/Page-section.json",
+      "content": {
+        "_template": "/container/TwoColumnContainer.hbs",
+        "_styledTemplate": "/container/TwoColumnContainer7030.hbs",
+        "title": "Careers",
+        "showContainerTitle": true,
+        "columnOne": {
+          "_include": "/page/list/PageListD-2column.json",
+          "pagination": null,
+          "url": "",
+          "title": "",
+          "items": [
+            {
+              "_template": "/V1/promo/PagePromoC-V1.hbs",
+              "backgroundColor": "#ffffff",
+              "url": "",
+              "category": "APS",
+              "categoryUrl": "#",
+              "type": "Panel Discussion",
+              "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+              "description": "October 6 - 8, Washington D.C."
+            },
+            {
+              "_template": "/V1/promo/PagePromoC-V1.hbs",
+              "backgroundColor": "#ffffff",
+              "url": "",
+              "category": "SPS",
+              "categoryUrl": "#",
+              "type": "Article",
+              "title": "Lorem ipsum dolor sit amet, consec tetur adip iscing elit sed lorem ipsum "
+            },
+            {
+              "_template": "/V1/promo/PagePromoC-V1.hbs",
+              "backgroundColor": "#ffffff",
+              "url": "",
+              "category": "SPS",
+              "categoryUrl": "#",
+              "type": "Article",
+              "title": "Lorem ipsum dolor sit amet, consec tetur adip iscing elit sed lorem ipsum "
+            },
+            {
+              "_template": "/V1/promo/PagePromoC-V1.hbs",
+              "backgroundColor": "#ffffff",
+              "url": "",
+              "category": "Community",
+              "categoryUrl": "#",
+              "type": "Discussion",
+              "title": "Lorem ipsum dolor sit amet, consec tetur adip iscing elit sed"
+            }
+          ]
+        },
+        "columnTwo": {
+          "_include": "/page/list/PageListL.json",
+          "title": "Recent Opportunities from the AIP Jobs Board",
+          "description": "",
+          "ctaUrl": "",
+          "items": [
+            {
+              "_template": "/page/list/PageListL.hbs",
+              "title": "",
+              "description": "",
+              "ctaUrl": "",
+              "items": [
+                {
+                  "_template": "/page/promo/PagePromo.hbs",
+                  "publishDate": "{{date('short')}}",
+                  "url": "",
+                  "title": "Nuclear Energy Justice Policy Fellow",
+                  "description": "Lorem Ipsom Dolsot Amir, Washington D.C., D.C."
+                },
+                {
+                  "_template": "/page/promo/PagePromo.hbs",
+                  "publishDate": "{{date('short')}}",
+                  "url": "",
+                  "title": "Nuclear Energy Justice Policy Fellow",
+                  "description": "Lorem Ipsom Dolsot Amir, Washington D.C., D.C."
+                },
+                {
+                  "_template": "/page/promo/PagePromo.hbs",
+                  "publishDate": "{{date('short')}}",
+                  "url": "",
+                  "title": "Nuclear Energy Justice Policy Fellow",
+                  "description": "Lorem Ipsom Dolsot Amir, Washington D.C., D.C."
+                }
+              ]
+            },
+            {
+              "_template": "/V1/promo/PagePromoC-V1.hbs",
+              "className": "PagePromoC--grey",
+              "title": "",
+              "description": "View listings from across our sixteen member societies and affiliates",
+              "url": "#",
+              "ctaButtonText": "Search All 1,103 Listings "
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

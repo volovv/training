@@ -1,0 +1,29 @@
+.Page-header {
+  .Page-body:not([data-scrolling]) & {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: none;
+  }
+
+  &-bar {
+    justify-content: space-between;
+  }
+
+  &-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &-start,
+  &-end {
+    @media only screen and (min-width: 1024px) {
+      flex: 0 0 20%;
+    }
+  }
+
+  & &-navigation {
+    flex: 0 0 auto;
+    width: auto;
+  }
+}

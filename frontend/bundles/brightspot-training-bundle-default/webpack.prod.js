@@ -24,6 +24,15 @@ module.exports = merge(require('./webpack.common.js'), {
   module: {
     rules: [
       {
+        test: path.resolve(__dirname, './styleguide/V1/styles/All.less'),
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'postcss-loader',
+          'less-loader'
+        ]
+      },
+      {
         test: path.resolve(__dirname, './styleguide/styles/style-1/All.less'),
         use: [
           MiniCssExtractPlugin.loader,
